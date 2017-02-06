@@ -9,23 +9,43 @@
     <div ng-view></div>
 
     <!-- Required libraries -->
-    <script src="libs/angularjs/angular.min.js"></script>
-    <script src="libs/angularjs/angular-route.min.js"></script>
+    <script src="libs/angular/angular.min.js"></script>
+    <script src="libs/angular/angular-animate.min.js"></script>
+    <script src="libs/angular/angular-aria.min.js"></script>
+    <script src="libs/angular/angular-messages.min.js"></script>
+    <script src="libs/angular/angular-route.min.js"></script>
+
+    <!-- Angular Material -->
+    <link rel="stylesheet" href="libs/angular-material/angular-material.min.css">
+    <script src="libs/angular-material/angular-material.min.js"></script>
 
     <!-- Services -->
-
+    <!-- TODO: Add services here -->
 
     <!-- Directives -->
-    <link rel="stylesheet" href="app/directives/chatbox/css/chatbox.css">
-    <script src="app/directives/chatbox/chatbox.js"></script>
+    <!-- TODO: Add directives here -->
 
-    <!-- Modules -->
-    <link rel="stylesheet" href="app/modules/dashboard/css/dashboard.css">
-    <script src="app/modules/dashboard/module.js"></script>
-    <script src="app/modules/dashboard/DashboardCtrl.js"></script>
+    <!-- Components -->
+    <link rel="stylesheet" href="app/components/chatbox/css/chatbox.css">
+    <script src="app/components/chatbox/module.js"></script>
+    <script src="app/components/chatbox/chatbox.js"></script>
 
+    <link rel="stylesheet" href="app/components/dashboard/css/dashboard.css">
+    <script src="app/components/dashboard/module.js"></script>
+    <script src="app/components/dashboard/dashboard.js"></script>
 
     <!-- Startup code -->
     <script src="app/app.js"></script>
+    <script src="app/routes.js"></script>
+
+    <script>
+        /* Wait for all resources to be downloaded */
+        angular
+            .element(document)
+            .ready(function() {
+                /* Start the angular app */
+                angular.bootstrap(document, ['ngStarterKit']);
+            });
+    </script>
 </body>
 </html>
