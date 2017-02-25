@@ -8,4 +8,9 @@ angular.module('ngStarterKit')
     $routeProvider.when('/', {
         template: '<dashboard></dashboard>'
     });
+
+    /* Handle route on location path is '/chat' */
+    $routeProvider.when('/chat', {
+        template: '<chatbox></chatbox>'
+    });
 }]);

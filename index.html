@@ -5,7 +5,23 @@
     <title>ngStarterKit</title>
 </head>
 <body>
-    <navbar></navbar>
+    <md-nav-bar
+        md-selected-nav-item="'dashboard'"
+        nav-bar-aria-label="navigation links">
+        <md-nav-item
+            md-nav-href="#/"
+            name="dashboard">
+            Dashboard
+        </md-nav-item>
+
+        <md-nav-item
+            md-nav-href="#/chat"
+            name="chat">
+            Chat
+        </md-nav-item>
+    </md-nav-bar>
+
+    <!-- Displays component depends on route -->
     <div ng-view></div>
 
     <!-- Required libraries -->
