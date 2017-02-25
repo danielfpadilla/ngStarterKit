@@ -8,4 +8,4 @@ To utilize this one. Kindly download everything and extract it to your computer.
 I suggest you also install NodeJs.
 After installing node, go to command line or terminal and install http-server just type "npm install -g http-server"
 
-Try this [DEMO](https://danielfpadilla.github.io/ngStarterKit/#/chat)
+Try this [DEMO](https://danielfpadilla.github.io/ngStarterKit)
